@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+<include file='Public/head' />
+		<link rel="stylesheet" type="text/css" href="__MOBILE__/css/common.css" />
+		<link type="text/css" rel="stylesheet" href="__MOBILE__/css/css99.css" />
+		<link type="text/css" rel="stylesheet" href="__MOBILE__/css/css999.css" />
+		<link rel="stylesheet" type="text/css" href="__MOBILE__/css/css6.css" />
+		<script type="text/javascript" src="__MOBILE__/js/jquery-1.11.0.js"></script>
+		<script type="text/javascript" src="__MOBILE__/js/jjs.js"></script>
+		<script src="__MOBILE__/js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('nav#menu').mmenu({
+					extensions: ['effect-slide-menu', 'pageshadow'],
+					searchfield: true,
+					counters: true,
+					navbar: {
+						title: '资讯'
+					},
+					navbars: [{
+						position: 'top',
+						content: ['searchfield']
+					}, {
+						position: 'top',
+						content: [
+							'prev',
+							//							'title',
+							'close'
+						]
+					}, {
+						position: 'bottom',
+						content: [
+							' WordPress plugin '
+						]
+					}]
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<div id="page">
+			<div class="header">
+				<a href="#menu"></a>
+			</div>
+			<div class="content">
+				<div class="container">
+					<div class="about_us_img1">
+						<img src="__MOBILE__/img/information_title.png" />
+					</div>
+				<volist name='list' id='l' >					
+					<div class="information">
+						<a href="{:U('Article/detail?id='.$l['id'])}">
+							<div class="information1">
+								<div class="information_img">
+									<img src="{$l['cover_id']|get_img}" />
+								</div>
+								<div class="information_text">
+									<h2>{$l['title']}</h2>
+									<p>{$l['description']}</p>
+								</div>
+							</div>
+						</a>
+					</div>
+				</volist>
+				</div>
+				<footer>
+		<include file='Public/footer' />
+				</footer>
+			</div>
+<include file='Public/right' />
+		</div>
+	</body>
+
+</html>

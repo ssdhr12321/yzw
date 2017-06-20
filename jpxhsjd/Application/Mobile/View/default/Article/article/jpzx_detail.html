@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+<include file='Public/head' />
+		<link rel="stylesheet" type="text/css" href="__MOBILE__/css/common.css" />
+		<link type="text/css" rel="stylesheet" href="__MOBILE__/css/css99.css" />
+		<link type="text/css" rel="stylesheet" href="__MOBILE__/css/css999.css" />
+		<link rel="stylesheet" type="text/css" href="__MOBILE__/css/css9.css" />
+		<script type="text/javascript" src="__MOBILE__/js/jquery-1.11.0.js"></script>
+		<script type="text/javascript" src="__MOBILE__/js/jjs.js"></script>
+		<script src="__MOBILE__/js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('nav#menu').mmenu({
+					extensions: ['effect-slide-menu', 'pageshadow'],
+					searchfield: true,
+					counters: true,
+					navbar: {
+						title: '详情'
+					},
+					navbars: [{
+						position: 'top',
+						content: ['searchfield']
+					}, {
+						position: 'top',
+						content: [
+							'prev',
+							//							'title',
+							'close'
+						]
+					}, {
+						position: 'bottom',
+						content: [
+							' WordPress plugin '
+						]
+					}]
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<div id="page">
+			<div class="header">
+				<a href="#menu"></a>
+			</div>
+			<div class="content">
+				<div class="container">
+					<div class="read_position_content">
+						<div class="read_position">
+							<ul>
+								<li>当前位置：</li>
+								<a href="{:U('index/index')}"><li>首页</li></a>
+								<li class="vertical_line">|</li>
+								<if condition="$category['id'] eq 43" >
+									<a href="{:U('Article/lists?category=43')}"><li>佳鹏资讯</li></a>
+								</if>
+								<if condition="$category['id'] eq 45" >
+									<a href="{:U('Article/lists?category=45')}"><li>联盟动态</li></a>
+								</if>
+								<li class="vertical_line">|</li>
+								<li>文章详情</li>
+							</ul>
+						</div>
+					</div>
+					<div class="read_position_text">
+						<p>
+							{$info['content']}
+						</p>
+					</div>
+				</div>
+				<footer>
+		<include file='Public/footer' />
+				</footer>
+			</div>
+<include file='Public/right' />
+		</div>
+	</body>
+
+</html>

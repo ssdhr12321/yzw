@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+<include file='Public/head' />
+		<link rel="stylesheet" type="text/css" href="__MOBILE__/css/common.css" />
+		<link type="text/css" rel="stylesheet" href="__MOBILE__/css/css99.css" />
+		<link type="text/css" rel="stylesheet" href="__MOBILE__/css/css999.css" />
+		<link rel="stylesheet" type="text/css" href="__MOBILE__/css/css3.css" />
+		<script type="text/javascript" src="__MOBILE__/js/jquery-1.11.0.js"></script>
+		<script type="text/javascript" src="__MOBILE__/js/jjs.js"></script>
+		<script src="__MOBILE__/js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('nav#menu').mmenu({
+					extensions: ['effect-slide-menu', 'pageshadow'],
+					searchfield: true,
+					counters: true,
+					navbar: {
+						title: '关于'
+					},
+					navbars: [{
+						position: 'top',
+						content: ['searchfield']
+					}, {
+						position: 'top',
+						content: [
+							'prev',
+							//							'title',
+							'close'
+						]
+					}, {
+						position: 'bottom',
+						content: [
+							' WordPress plugin '
+						]
+					}]
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<div id="page">
+			<div class="header">
+				<a href="#menu"></a>
+			</div>
+			<div class="content">
+				<div class="container">
+				<if condition="$category['id'] eq 39" >	
+					<div class="about_us_img1">
+						<img src="__MOBILE__/img/about_us_title.png" />
+					</div>
+				</if>
+				<if condition="$category['id'] eq 42" >	
+					<div class="about_us_img1">
+						<img src="__MOBILE__/img/classic_case.png" />
+					</div>
+				</if>
+				<if condition="$category['id'] eq 44" >	
+					<div class="about_us_img1">
+						<img src="__MOBILE__/img/union.png" />
+					</div>
+				</if>
+				<if condition="$category['id'] eq 46" >	
+					<div class="about_us_img1">
+						<img src="__MOBILE__/img/recruit_people.png" />
+					</div>
+				</if>
+					<div class="generalization">
+						<div class="generalization_title">
+							<ul>
+					  <if condition="$category['id'] neq 46" >
+						<volist name='list' id='l' >
+							<a href="{:U('Article/lists?category='.$category['id'].'&gl='.$l['id'])}"><li class="enterprise <if condition='$l[id] eq $gl'> sy </if>">{$l['title']}</li></a>
+						</volist>
+					  </if>
+							<if condition='$category[id] eq 39' >
+								<a href="{:U('Article/lists?category=40')}">
+									<li>专项法律服务</li>
+								</a>
+							</if>
+							<if condition='$category[id] eq 40' >
+								<a href="{:U('Article/lists?category=39')}">
+									<li style='float:right'><<返回上级</li>
+								</a>
+							</if>
+							<if condition='$category[id] eq 44' >
+								<a href="{:U('Article/lists?category=45')}">
+									<li>联盟动态</li>
+								</a>
+							</if>
+							</ul>
+						</div>
+						<div class="clear"></div>
+						<div class="enterprise_summary">
+							<p>
+								{$gl|get_content}
+							</p>
+						</div>
+					</div>
+					<footer>
+		<include file='Public/footer' />
+					</footer>
+				</div>
+	<include file='Public/right' />
+			</div>
+	</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+<include file='Public/head' />
+		<link rel="stylesheet" type="text/css" href="__MOBILE__/css/common.css" />
+		<link type="text/css" rel="stylesheet" href="__MOBILE__/css/css99.css" />
+		<link type="text/css" rel="stylesheet" href="__MOBILE__/css/css999.css" />
+		<link rel="stylesheet" type="text/css" href="__MOBILE__/css/css7.css" />
+		<link rel="stylesheet" type="text/css" href="http://www.hot80.com/demo/css/wxs.page.css">
+		<script type="text/javascript" src="__MOBILE__/js/jquery-1.11.0.js"></script>
+		<script type="text/javascript" src="__MOBILE__/js/jjs.js"></script>
+		<script src="__MOBILE__/js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('nav#menu').mmenu({
+					extensions: ['effect-slide-menu', 'pageshadow'],
+					searchfield: true,
+					counters: true,
+					navbar: {
+						title: '联盟'
+					},
+					navbars: [{
+						position: 'top',
+						content: ['searchfield']
+					}, {
+						position: 'top',
+						content: [
+							'prev',
+							//							'title',
+							'close'
+						]
+					}, {
+						position: 'bottom',
+						content: [
+							' WordPress plugin '
+						]
+					}]
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<div id="page">
+			<div class="header">
+				<a href="#menu"></a>
+			</div>
+			<div class="content">
+				<div class="container">
+					<div class="about_us_img1">
+						<img src="__MOBILE__/img/union.png" />
+					</div>
+					<div class="union">
+						<ul>
+						  <volist name='list' id='l' >
+								<a href="{:U('Article/lists?category='.$l['category_id'].'&gl='.$l['id'])}">
+									<li class="enterprise <if condition='$l[id] eq $gl'><if condition='$category[id] neq 45'> sy </if></if>">{$l['title']}</li>
+								</a>								
+						  </volist>
+								<a href="{:U('Article/lists?category=45')}">
+									<li class="enterprise <if condition='$category[id] eq 45'> sy </if>">联盟动态</li>
+								</a>
+						</ul>
+					</div>
+
+					<!--联盟动态-->
+				<if condition="$category['id'] eq 45" >
+					<div class="union_container">
+					<volist name='cate' id='c' >
+						<div class="union_content">
+							<a href="{:U('Article/detail?id='.$c['id'])}">
+								<div class="union_content_text">
+									<p class="union_content_text_p1">{$c['title']}</p>
+									<p class="union_content_text_p2">{$c['id']|get_content}</p>
+								</div>
+							</a>
+						</div>	
+					</volist>
+					     <div class="pagnation" id="pagnation">
+								<div class="w-page">
+									{$page}
+					    		</div>
+						 </div>
+					</div>
+				<else/>
+					<div class="clear"></div>
+					<div class="enterprise_summary">
+						<p>
+							{$gl|get_content}
+						</p>
+					</div>				
+				</if>
+					<footer>
+		<include file='Public/footer' />
+					</footer>
+				</div>
+<include file='Public/right' />
+			</div>
+	</body>
+
+</html>

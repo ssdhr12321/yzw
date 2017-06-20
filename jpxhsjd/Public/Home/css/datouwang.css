@@ -1,0 +1,9 @@
+/* 代码整理：大头网 www.datouwang.com */
+.datouwang {width:400px; margin:0 auto;}
+.yiz-slider-1 {height: 300px;width: 400px;float: left;position: relative; overflow: hidden;}
+.yiz-slider-1 ul {margin: 0px;padding: 0px;float: left;height: auto;width: 100%;list-style-type: none;display: block; position: absolute;top: 0;left: 0; z-index: 98}
+.yiz-slider-1 ul li {height:300px;width:400px;float: left;padding: 0px;margin: 0px; overflow: hidden;z-index:1;}
+.yiz-slider-1 ul li img{ width:400px; height:300px; z-index:1;}
+.yiz-page-btn {float: left;width: auto;height:25px; position: absolute; bottom: 10px; right: 10px; z-index: 99}
+.yiz-page-btn span{height: 25px;width: 25px;background-color:#F60;display: block;float: left;line-height: 25px;text-align: center;color: #FFF;margin-right: 5px;cursor:pointer; }
+.yiz-page-btn .current {background-color: #f00;}

@@ -1,0 +1,33 @@
+.contact_us {
+	width: 95%;
+	margin: 0 auto;
+}
+.address {
+	width: 100%;
+}
+.address ul li {
+	width: 100%;
+	font-size: 1.4rem;
+	margin-top: 10px;
+}
+.map {
+	width: 95%;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+
+@media (min-width:320px) and (max-width:360px) {
+	.address ul li {
+		font-size: 1.2rem;
+	}
+}
+
+#dituContent {
+	width: 100%;
+}
+
+
+#platform {
+	left: 0!important;
+}

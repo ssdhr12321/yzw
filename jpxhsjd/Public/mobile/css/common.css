@@ -1,0 +1,314 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 62.5%;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none!important;
+}
+
+body {
+	background: #FFF;
+	box-sizing: border-box;
+}
+
+.clear {
+	clear: both;
+}
+
+img {
+	border: 0px;
+}
+
+header {
+	width: 100%;
+}
+
+header img {
+	width: 100%;
+}
+
+
+/*banner*/
+
+.focus {
+	width: 100%;
+	margin-bottom: 20px;
+	overflow: hidden;
+	height: auto;
+}
+
+.flexslider {
+	position: relative;
+	overflow: hidden;
+}
+
+.slides {
+	overflow: hidden;
+}
+
+.slides {
+	position: relative;
+	z-index: 1;
+}
+
+.slides li img {
+	width: 100%;
+}
+
+.container {
+	width: 100%;
+	padding-bottom: 20px;
+}
+
+.about_us {
+	width: 100%;
+	margin-top: 5px;
+}
+
+.about_us_img {
+	width: 100%;
+}
+
+.about_us_img img {
+	width: 100%;
+}
+
+.about_us_img1 {
+	width: 100%;
+}
+
+.about_us_img1 img {
+	width: 100%;
+}
+
+.about_us_text {
+	width: 95%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.about_us_text_img {
+	width: 30%;
+	display: inline-block;
+	float: left;
+	margin-top: 10px;
+}
+
+.about_us_text_img img {
+	width: 100%;
+}
+
+.about_us_text_content {
+	width: 66%;
+	display: inline-block;
+	float: left;
+	margin-top: 7px;
+	padding-left: 4%;
+}
+
+.about_us_text_content p {
+	width: 100%;
+	font-size: 1.4rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 4;
+}
+
+.read {
+	width: 35%;
+	font-size: 1.4rem;
+	color: #FFFFFF;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border: 1px solid #FF0000;
+	background-color: #FF0000;
+	border-radius: 10px;
+	text-align: center;
+	margin-left: 55%;
+	margin-top: 3px;
+	outline: none;
+}
+
+.information {
+	width: 97%;
+	margin: 0 auto;
+	overflow: hidden;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.information_img {
+	width: 35%;
+	float: left;
+}
+
+.information_img img {
+	width: 100%;
+}
+
+.information_text {
+	width: 60%;
+	float: left;
+	margin-left: 5%;
+}
+
+.information_text h2 {
+	margin-top: 5px;
+	color: #000000;
+	font-size: 1.4rem!important;
+}
+
+.information_text p {
+	margin-top: 5px;
+	font-size: 1.4rem;
+	color: #919191;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+}
+
+.line {
+	width: 100%;
+	display: block;
+	margin-top: -10px;
+}
+
+.line img {
+	width: 100%;
+}
+
+.picMarquee-left {
+	position: relative;
+	width: 97%;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.picMarquee-left ul {
+	overflow: hidden;
+	zoom: 1;
+}
+
+.picMarquee-left ul li {
+	width: 48%;
+	float: left;
+	margin-top: 10px;
+	font-size: 0!important;
+}
+
+.tempWrap {
+	width: 100%!important;
+}
+
+.picMarquee-left ul li {
+	margin-left: 5px;
+}
+
+.lawyer_team_img {
+	width: 100%;
+	margin-left: 1%;
+}
+
+.lawyer_team_img img {
+	width: 100%;
+}
+
+.lawyer_team_text {
+	width: 100%;
+	margin-top: -12px;
+}
+
+.lawyer_team_text p {
+	width: 100%;
+	text-align: center;
+	background-color: #E40000;
+	font-size: 1.6rem;
+	color: #FFFFFF;
+}
+
+.more {
+	width: 30%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
+	border: 1px solid #E40000;
+	font-size: 1.6rem;
+	color: #E40000;
+	border-radius: 4px;
+	margin: 0 auto;
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+
+.button_color {
+	background-color: #FF0000;
+	color: #FFFFFF;
+	border: 1px solid #FF0000;
+}
+
+footer {
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	background-color: #2D2D2D;
+	padding-top: 3px;
+	z-index: 10;
+}
+
+.foot {
+	overflow: hidden;
+	width: 97%;
+	margin: 0 auto;
+	bottom: 0;
+}
+
+.foot ul li {
+	width: 100%;
+	font-size: 1.4rem;
+	margin-top: 2px;
+	color: #FFFFFF;
+}
+
+@media (min-width:320px) and (max-width:360px) {
+	.information_text {
+		width: 60%;
+		float: left;
+		margin-left: 5%;
+	}
+	.information_text h2 {
+		margin-top: 5px;
+		color: #000000;
+		font-size: 1.2rem!important;
+	}
+	.information_text p {
+		margin-top: 5px;
+		font-size: 1.2rem;
+		color: #919191;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 2;
+	}
+	.foot ul li {
+		width: 100%;
+		font-size: 1.2rem;
+		margin-top: 2px;
+		color: #FFFFFF;
+	}
+}

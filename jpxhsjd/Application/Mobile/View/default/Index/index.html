@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+<include file='Public/head' />
+		<link rel="stylesheet" type="text/css" href="__MOBILE__/css/common.css" />
+		<link rel="stylesheet" type="text/css" href="__MOBILE__/css/swiper.min.css">
+		<link rel="stylesheet" type="text/css" href="__MOBILE__/css/wheel_swiper.css" />
+		<link type="text/css" rel="stylesheet" href="__MOBILE__/css/css99.css" />
+		<link type="text/css" rel="stylesheet" href="__MOBILE__/css/css999.css" />
+		<script type="text/javascript" src="__MOBILE__/js/jquery-1.11.0.js"></script>
+		<script src="__MOBILE__/js/banner.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="__MOBILE__/js/jjs.js"></script>
+		<script src="__MOBILE__/js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="__MOBILE__/js/jquery.SuperSlide.2.1.1.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('nav#menu').mmenu({
+					extensions: ['effect-slide-menu', 'pageshadow'],
+					searchfield: true,
+					counters: true,
+					navbar: {
+						title: '首页'
+					},
+					navbars: [{
+						position: 'top',
+						content: ['searchfield']
+					}, {
+						position: 'top',
+						content: [
+							'prev',
+							//							'title',
+							'close'
+						]
+					}, {
+						position: 'bottom',
+						content: [
+							' WordPress plugin '
+						]
+					}]
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<div id="page">
+			<div class="focus">
+				<div class="flexslider">
+					<ul class="slides">
+					<volist name='picture' id='p' >
+						<li><img src="{$p['cover_id']|get_img}" /></li>
+					</volist>
+					</ul>
+				</div>
+				<a href="#menu"></a>
+			</div>
+			<script type="text/javascript">
+				$('.flexslider').flexslider({
+					directionNav: true,
+					pauseOnAction: false
+				});
+				$(".slides li img").css("height", $("img").width() * 208 / 375);
+			</script>
+			<div class="content">
+				<div class="container">
+					<div class="about_us">
+						<div class="about_us_img">
+							<img src="__MOBILE__/img/about_us_title.png" />
+						</div>
+					</div>
+					<div class="about_us_text">
+						<div class="about_us_text_img">
+							<img src="{$syimg[0]['cover_id']|get_img}" />
+						</div>
+						<div class="about_us_text_content">
+							{$gywm['id']|get_content}
+							<a href="{:U('Article/lists?category=39&gl=2')}"><button class="read">阅读全文</button></a>
+						</div>
+					</div>
+					<div class="about_us">
+						<div class="about_us_img">
+							<img src="__MOBILE__/img/field.png" />
+						</div>
+					</div>
+
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="__MOBILE__/img/jjpp_10.png" />
+							</div>
+							<div class="swiper-slide">
+								<img src="__MOBILE__/img/jjpp_12.png" />
+							</div>
+							<div class="swiper-slide">
+								<img src="__MOBILE__/img/jjpp_14.png" />
+							</div>
+							<div class="swiper-slide">
+								<img src="__MOBILE__/img/jjpp_16.png" />
+							</div>
+							<div class="swiper-slide">
+								<img src="__MOBILE__/img/jjpp_18.png" />
+							</div>
+							<div class="swiper-slide">
+								<img src="__MOBILE__/img/jjpp_20.png" />
+							</div>
+							<div class="swiper-slide">
+								<img src="__MOBILE__/img/jjpp_22.png" />
+							</div>
+							<div class="swiper-slide">
+								<img src="__MOBILE__/img/jjpp_24.png" />
+							</div>
+						</div>
+					</div>
+					<script src="__MOBILE__/js/swiper.min.js"></script>
+					<script type="text/javascript">
+						var swiper = new Swiper('.swiper-container', {
+							pagination: '.swiper-pagination',
+							slidesPerView: 3,
+							paginationClickable: true,
+							spaceBetween: 30
+						});
+					</script>
+
+					<div class="about_us">
+						<div class="about_us_img">
+							<img src="__MOBILE__/img/information_title.png" />
+						</div>
+					</div>
+				<volist name='list' id='l' mod='2' >
+					<div class="information">
+						<a href="{:U('Article/detail?id='.$l['id'])}">
+							<div class="information_img">
+								<img src="{$l['cover_id']|get_img}" />
+							</div>
+							<div class="information_text">
+								<h2>{$l['title']}</h2>
+								<p>{$l['descroption']}</p>
+							</div>
+						</a>
+					</div>
+					<eq name='mod' value='0'>
+						<div class="line">
+							<img src="__MOBILE__/img/line.png" />
+						</div>
+					</eq>
+				</volist>
+					<div class="about_us">
+						<div class="about_us_img">
+							<img src="__MOBILE__/img/team_title.png" />
+						</div>
+					</div>
+
+					<div class="picMarquee-left">
+						<div class="bd">
+							<ul class="picList">
+							<volist name='ls' id='s' >
+								<li>
+									<a href="{:U('Article/detail?id='.$s['id'])}">
+										<div class="lawyer_team_img">
+											<img src="{$s['cover_id']|get_img}" />
+											<div class="lawyer_team_text">
+												<p>{$s['title']}</p>
+											</div>
+										</div>
+									</a>
+								</li>
+							</volist>
+							</ul>
+						</div>
+					</div>
+
+					<script type="text/javascript">
+						jQuery(".picMarquee-left").slide({
+							mainCell: ".bd ul",
+							autoPlay: true,
+							effect: "leftMarquee",
+							vis: 4,
+							interTime: 20
+						});
+					</script>
+
+					<!--<a href="">-->
+					<a href="{:U('Article/lists?category=41')}"><p class="more">
+						查看更多
+					</p></a>
+					<!--</a>-->
+				</div>
+				<footer>
+			<include file='Public/footer' />
+				</footer>
+			</div>
+
+	<include file='Public/right' />
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,18 @@
+.information {
+	border-bottom: 2px solid #A4A4A4;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.information1 {
+	width: 97%;
+	margin: 0 auto;
+	margin-bottom: 5px;
+	overflow: hidden;
+}
+.information_text p {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+}

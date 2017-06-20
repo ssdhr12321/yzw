@@ -1,0 +1,63 @@
+.union_container {
+	margin-bottom: 30px;
+}
+.union {
+	overflow: hidden;
+	padding-top: 10px;
+}
+.union ul li {
+	float: left;
+	width: 22%;
+	font-size: 1.4rem;
+	border-radius: 4px;
+	border: 1px solid #FFFFFF;
+	outline: none;
+	display: inline-block;
+	text-align: center;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+.company {
+	width: 30%!important;
+}
+
+.union_content {
+	width: 100%;
+	border-bottom: 2px solid #A4A4A4;
+	margin-top: 20px;
+}
+
+.union_content_text {
+	width: 95%;
+	margin: 0 auto;
+}
+.union_content_text_p1 {
+	font-size: 1.6rem;
+	margin-bottom: 10px;
+	width: 95%;
+	overflow: hidden;
+	display: inline-block;
+	white-space:nowrap; 
+	overflow:hidden; text-overflow:ellipsis
+}
+.union_content_text_p2 {
+	font-size: 1.4rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	margin-bottom: 8px;
+}
+
+
+.constitution {
+	width: 95%;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	display: none;
+}
+.constitution p {
+	font-size: 1.4rem;
+}

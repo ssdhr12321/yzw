@@ -1,0 +1,40 @@
+.about_us_img3 {
+	width: 100%;
+	margin-top: 20px;
+}
+.about_us_img3 img {
+	width: 100%;
+}
+.lawyer_team {
+	width: 97%;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.lawyer_team ul {
+	overflow: hidden;
+}
+.lawyer_team ul li {
+	width: 48%;
+	float: left;
+	margin-top: 10px;
+	font-size: 0;
+}
+.lawyer_team_img_left {
+	margin-left: 4%;
+}
+.lawyer_team_img {
+	width: 100%;
+}
+.lawyer_team_img img {
+	width: 100%;
+}
+.lawyer_team_text {
+	width: 100%;
+}
+.lawyer_team_text p {
+	width: 100%;
+	text-align: center;
+	background-color: #E40000;
+	font-size: 1.6rem;
+	color: #FFFFFF;
+}

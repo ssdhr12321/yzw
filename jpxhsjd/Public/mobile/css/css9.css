@@ -1,0 +1,28 @@
+.read_position_content {
+	width: 100%;
+	border-bottom: 2px solid #A4A4A4;
+}
+.read_position {
+	overflow: hidden;
+	width: 97%;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+.read_position ul li {
+	float: left;
+	font-size: 1.4rem;
+	margin-left: 1%;
+}
+.vertical_line {
+	margin-left: 2%!important;
+	margin-right: 1%;
+}
+.read_position_text {
+	width: 95%;
+	margin: 0 auto;
+	margin-top: 5px;
+}
+.read_position_text p {
+	font-size: 1.4rem;
+}

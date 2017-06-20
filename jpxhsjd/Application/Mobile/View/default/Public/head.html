@@ -1,0 +1,8 @@
+		<meta charset="utf-8" />
+		<meta name="author" content="www.frebsite.nl" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+		<if condition="$category['id'] eq null" >
+			<title>网站首页</title>
+		<else/>
+			<title>{$category['title']}</title>
+		</if>

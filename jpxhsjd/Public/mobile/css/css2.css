@@ -1,0 +1,66 @@
+header {
+	width: 100%;
+}
+header img {
+	width: 100%;
+}
+
+.about_us_img1 {
+	width: 100%;
+	margin-top: 20px;
+}
+.about_us_img1 img {
+	width: 100%;
+}
+.about_us_img1_text {
+	width: 97%;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+button {
+	width: 20%;
+	border: none;
+	background-color: #FFFFFF;
+	border-radius: 4px;
+	border: 1px solid #FFFFFF;
+	outline: none;
+	font-size: 1.4rem;
+	float: left;
+	display: inline-block;
+}
+.litigation {
+	margin-left: 3%;
+}
+.about_us_img1_text_1 a {
+	color: #000000;
+}
+.about_us_img1_text_1 span {
+	font-size: 1.4rem;
+	width: 25%;
+	float: right;
+	display: inline-block;
+}
+.button_color {
+	background-color: #FF0000;
+	color: #FFFFFF;
+	border: 1px solid #FF0000;
+}
+
+.about_us_img1_text_2 {
+	width: 97%;
+	margin: 0 auto;
+	margin-top: 15px;
+}
+.about_us_img_content1 {
+	margin-bottom: 50px;
+}
+.about_us_img_content1 p {
+	font-size: 1.4rem;
+}
+.about_us_img_content2 {
+	display: none;
+	margin-bottom: 50px;
+}
+.about_us_img_content2 p {
+	font-size: 1.4rem;
+}
